@@ -51,9 +51,21 @@ class WCREST_People {
 		
 		$this->add_taxonomies();
 		
+		$this->add_customizer();
+		
 		add_filter( 'template_include', array( $this, 'template_include'), 99 );
 		
 	} // end init
+	
+	
+	private function add_customizer(){
+		
+		require_once 'classes/class-crest-customizer.php';
+		
+		$customizer = new CREST_Customizer();
+		$customizer->init();
+		
+	} // end add_customizer
 	
 	
 	private function add_post_types(){
