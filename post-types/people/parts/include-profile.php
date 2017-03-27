@@ -8,7 +8,7 @@
 </style>
 <?php if ( ! empty( $video ) ):?>
 <section id="tre-profile-video-banner" class="person-profile">
-	<div class="wrap">
+	<div class="wide-wrap">
     	<img src="<?php echo WCRESTPLUGINURL;?>post-types/people/images/video-spacer.gif" />   
         <?php echo $video_html;?>
     </div>
